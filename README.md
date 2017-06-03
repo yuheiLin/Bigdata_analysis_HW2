@@ -12,3 +12,4 @@
 * Summary : <br>n_estimators設500有點偏高，所以導致之後再測其他最佳參數時花較多的時間，基本設(n_estimators=500,learning_rate=0.2)去測其他參數，0.2是為了減少時間，之後若遇到更大的Dataset可能最高n_estimators=100,leaning_rate=0.2去優化其他參數
 
 ## Parameter Tuning in XGBoost
+will be update soon...
