@@ -1,0 +1,34 @@
+DEFAULT=
+{'presort': 'auto', 
+'loss': 'deviance', 
+'verbose': 0, 
+'subsample': 1.0, 
+'max_leaf_nodes': None, 
+'learning_rate': 0.1, 
+'warm_start': False, 
+'min_samples_leaf': 1, 
+'n_estimators': 100, 
+'min_samples_split': 2, 
+'init': None, 
+'min_weight_fraction_leaf': 0.0, 
+'criterion': 'friedman_mse', 
+'random_state': None, 
+'min_impurity_split': 1e-07, 
+'max_features': None, 
+'max_depth': 3}
+
+
+para1 higher is better? in this case, but 
+mean: 0.97175, std: 0.00177, params: {'n_estimators': 50}, mean: 0.97497, std: 0.00116, params: {'n_estimators': 100}, mean: 0.97635, std: 0.00132, params: {'n_estimators': 150}, mean: 0.97663, std: 0.00053, params: {'n_estimators': 200}, mean: 0.97599, std: 0.00078, params: {'n_estimators': 250}, mean: 0.97644, std: 0.00073, params: {'n_estimators': 300}, mean: 0.97681, std: 0.00085, params: {'n_estimators': 350}, mean: 0.97681, std: 0.00106, params: {'n_estimators': 400} , mean: 0.97691, std: 0.00097, params: {'n_estimators': 450}, mean: 0.97700, std: 0.00111, params: {'n_estimators': 500}, mean: 0.97663, std: 0.00161, params: {'n_estimators': 550}, mean: 0.97654, std: 0.00137, params: {'n_estimators': 600}, mean: 0.97709, std: 0.00171, params: {'n_estimators': 650}
+
+para2 best = {'min_samples_split': 200, 'max_depth': 9} 0.976262949798
+mean: 0.97580, std: 0.00238, params: {'min_samples_split': 200, 'max_depth': 5}, mean: 0.97497, std: 0.00212, params: {'min_samples_split': 400, 'max_depth': 5}, mean: 0.97470, std: 0.00152, params: {'min_samples_split': 600, 'max_depth': 5}, mean: 0.85082, std: 0.24915, params: {'min_samples_split': 800, 'max_depth': 5}, mean: 0.80800, std: 0.33202, params: {'min_samples_split': 1000, 'max_depth': 5}, mean: 0.97507, std: 0.00111, params: {'min_samples_split': 200, 'max_depth': 7}, mean: 0.97507, std: 0.00176, params: {'min_samples_split': 400, 'max_depth': 7}, mean: 0.97543, std: 0.00184, params: {'min_samples_split': 600, 'max_depth': 7}, mean: 0.79977, std: 0.35168, params: {'min_samples_split': 800, 'max_depth': 7}, mean: 0.97543, std: 0.00167, params: {'min_samples_split': 1000, 'max_depth': 7}, mean: 0.97626, std: 0.00218, params: {'min_samples_split': 200, 'max_depth': 9}, mean: 0.97543, std: 0.00136, params: {'min_samples_split': 400, 'max_depth': 9}, mean: 0.97589, std: 0.00149, params: {'min_samples_split': 600, 'max_depth': 9}, mean: 0.86441, std: 0.22101, params: {'min_samples_split': 800, 'max_depth': 9}, mean: 0.97543, std: 0.00120, params: {'min_samples_split': 1000, 'max_depth': 9}, mean: 0.97562, std: 0.00183, params: {'min_samples_split': 200, 'max_depth': 11}, mean: 0.97525, std: 0.00157, params: {'min_samples_split': 400, 'max_depth': 11}, mean: 0.97534, std: 0.00022, params: {'min_samples_split': 600, 'max_depth': 11}, mean: 0.97589, std: 0.00151, params: {'min_samples_split': 800, 'max_depth': 11}, mean: 0.97507, std: 0.00103, params: {'min_samples_split': 1000, 'max_depth': 11}, mean: 0.97562, std: 0.00116, params: {'min_samples_split': 200, 'max_depth': 13}, mean: 0.97497, std: 0.00082, params: {'min_samples_split': 400, 'max_depth': 13}, mean: 0.97516, std: 0.00138, params: {'min_samples_split': 600, 'max_depth': 13}, mean: 0.97562, std: 0.00248, params: {'min_samples_split': 800, 'max_depth': 13}, mean: 0.97461, std: 0.00204, params: {'min_samples_split': 1000, 'max_depth': 13}, mean: 0.97599, std: 0.00077, params: {'min_samples_split': 200, 'max_depth': 15}, mean: 0.97562, std: 0.00080, params: {'min_samples_split': 400, 'max_depth': 15}, mean: 0.97580, std: 0.00120, params: {'min_samples_split': 600, 'max_depth': 15}, mean: 0.97451, std: 0.00221, params: {'min_samples_split': 800, 'max_depth': 15}, mean: 0.97470, std: 0.00174, params: {'min_samples_split': 1000, 'max_depth': 15}
+
+para3 best = {'min_samples_leaf': 70} 0.977182492245
+mean: 0.97700, std: 0.00260, params: {'min_samples_leaf': 30}, mean: 0.97691, std: 0.00154, params: {'min_samples_leaf': 40}, mean: 0.97672, std: 0.00156, params: {'min_samples_leaf': 50}, mean: 0.97700, std: 0.00184, params: {'min_samples_leaf': 60}, mean: 0.97718, std: 0.00169, params: {'min_samples_leaf': 70} mean: 0.97626, std: 0.00129, params: {'min_samples_leaf': 90}, mean: 0.97626, std: 0.00061, params: {'min_samples_leaf': 110}, mean: 0.97654, std: 0.00095, params: {'min_samples_leaf': 130}, mean: 0.97654, std: 0.00095, params: {'min_samples_leaf': 150}, mean: 0.97690, std: 0.00093, params: {'min_samples_leaf': 170}, mean: 0.97718, std: 0.00120, params: {'min_samples_leaf': 190}
+
+para4 best = {'max_features': 8} 0.976354607895
+mean: 0.97580, std: 0.00202, params: {'max_features': 2}, mean: 0.97617, std: 0.00189, params: {'max_features': 4}, mean: 0.97617, std: 0.00122, params: {'max_features': 6}, mean: 0.97635, std: 0.00168, params: {'max_features': 8}, mean: 0.97350, std: 0.00266, params: {'max_features': 10}
+
+para5 best = {'subsample': 0.8} 0.976354607895
+mean: 0.97553, std: 0.00129, params: {'subsample': 0.6}, mean: 0.97553, std: 0.00188, params: {'subsample': 0.7}, mean: 0.97571, std: 0.00195, params: {'subsample': 0.75}, mean: 0.97635, std: 0.00168, params: {'subsample': 0.8}, mean: 0.97599, std: 0.00229, params: {'subsample': 0.85}, mean: 0.97626, std: 0.00235, params: {'subsample': 0.9}
